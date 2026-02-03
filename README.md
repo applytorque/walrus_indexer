@@ -12,6 +12,8 @@ A smart contract protocol for indexing data stored on Walrus with on-chain searc
 ### Live Demo Website
 Check out the [interactive demo website](./website/) that stores its own content on Walrus!
 
+**Demo site**: https://walrus-indexer-site.vercel.app/
+
 **Website repo**: https://github.com/applytorque/walrus_indexer_site
 
 **Hosting**: Deploy the static site from the repo above (Vercel/Netlify/etc.).
