@@ -1,0 +1,64 @@
+🦭 Walrus Indexer - Website Content Deployment
+================================================
+
+[0;34m📁 Content Directory: ./website/content[0m
+[0;34m📦 Package ID: 0x0d3bae5dd0b3c184cdfb3dc5b6c301b371bc1d5e8a6d009179b3546ff63d8515[0m
+[0;34m📋 Registry ID: 0x3ec58678e9d0e0b8d70831f784ce998532cfa3cf26924150931e0bf2dc2e6094[0m
+
+[0;32m🚀 Starting deployment...[0m
+
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;34mProcessing: examples.json[0m
+[0;34mTags: ["walrus-indexer-website","examples","use-cases"][0m
+[0;34mDescription: Real-world examples and use cases for Walrus Indexer[0m
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33m📝 Indexing in registry: examples.json[0m
+[0;31m   ❌ Failed to index[0m
+   Result: [warning] Client/Server api version mismatch, client api version : 1.63.1, server api version : 1.64.1
+ObjectID hex string must start with 0x.
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;34mProcessing: tutorial.json[0m
+[0;34mTags: ["walrus-indexer-website","tutorial","guide"][0m
+[0;34mDescription: Complete tutorial guide for using Walrus Indexer[0m
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33m📝 Indexing in registry: tutorial.json[0m
+[0;31m   ❌ Failed to index[0m
+   Result: [warning] Client/Server api version mismatch, client api version : 1.63.1, server api version : 1.64.1
+ObjectID hex string must start with 0x.
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;34mProcessing: welcome.json[0m
+[0;34mTags: ["walrus-indexer-website","welcome","homepage"][0m
+[0;34mDescription: Walrus Indexer website welcome page content[0m
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[1;33m📝 Indexing in registry: welcome.json[0m
+[0;31m   ❌ Failed to index[0m
+   Result: [warning] Client/Server api version mismatch, client api version : 1.63.1, server api version : 1.64.1
+ObjectID hex string must start with 0x.
+
+[0;32m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;32m📊 Deployment Summary[0m
+[0;32m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+[0;34mTotal files processed: 0[0m
+
+[0;32m✅ Deployment info saved to: ./website/deployment_info.json[0m
+
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+[0;34m📖 Next Steps[0m
+[0;34m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m
+
+1. Open the website: file:///Users/macbook/Desktop/WalDrive/walrus_indexer/website/index.html
+2. Or serve it locally:
+   cd website && python3 -m http.server 8000
+   Then visit: http://localhost:8000
+
+3. Query your content:
+   ./query_indexed_blob.sh <blob_id>
+
+4. Search by tag:
+   sui client call --package 0x0d3bae5dd0b3c184cdfb3dc5b6c301b371bc1d5e8a6d009179b3546ff63d8515 --module indexer --function get_blobs_by_tag --args 0x3ec58678e9d0e0b8d70831f784ce998532cfa3cf26924150931e0bf2dc2e6094 "walrus-indexer-website"
+
+[0;32m🎉 Deployment complete![0m

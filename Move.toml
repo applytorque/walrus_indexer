@@ -1,0 +1,13 @@
+[package]
+name = "walrus_indexer"
+edition = "2024.beta"
+version = "0.1.0"
+
+[dependencies]
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true }
+Walrus = { git = "https://github.com/MystenLabs/walrus-docs.git", subdir = "contracts/walrus", rev = "main" }
+WAL = { git = "https://github.com/MystenLabs/walrus-docs.git", subdir = "contracts/wal", rev = "main" }
+
+[addresses]
+sui = "0x2"
+walrus_indexer = "0x0"

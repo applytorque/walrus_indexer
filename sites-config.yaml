@@ -1,0 +1,22 @@
+# Walrus Sites Configuration for Testnet
+# This config is used by site-builder to publish to Walrus Sites
+
+# The Walrus Sites package ID on testnet
+package: "0x86843e63fb3304bb0e5c02c1a042fe62e3f93c6d8a9faa0a38dac8e8d11f5a09"
+
+# Portal domain (used for display)
+portal: "wal.app"
+
+# General settings
+general:
+  # Path to Sui wallet config
+  wallet: "~/.sui/sui_config/client.yaml"
+  
+  # Walrus binary name/path
+  walrus_binary: "walrus"
+  
+  # Path to Walrus config
+  walrus_config: "~/.config/walrus/client_config.yaml"
+  
+  # Gas budget for transactions (10 SUI)
+  gas_budget: 10000000000
